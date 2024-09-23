@@ -1,0 +1,504 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Gloock-Regular";
+    src: url("../assets/Fonts/Gloock/Gloock-Regular.ttf");
+}
+@font-face {
+    font-family: "Inconsolata-VariableFont_wdth,wght";
+    src: url("../assets/Fonts/Inconsolata/");
+}
+@font-face {
+    font-family: "RobotoSlab-VariableFont_wght";
+    src: url("../assets/Fonts/Roboto_Slab/");
+}
+@font-face {
+    font-family: "Rubik-Italic-VariableFont_wght";
+    src: url("../assets/Fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf");
+}
+@keyframes float {
+    0% {
+    transform: translateY(0); /*The starting point of the animation is 0.*/
+    }
+    50% {
+    transform: translateY(-10px); /*The middle point of the animation is -15xp. This will move the element up.*/
+    }
+    100% {
+    transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
+    }
+}
+
+/*Agrego Scroll para que la pestaña Curriculum no se desfase*/
+html {
+    overflow-y: scroll;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;;
+}
+.Body{
+    font-family: Arial, sans-serif; 
+    color: #000000;
+    background-image: url(../Triangulos\ grise.webp);
+    background-size:contain; /* Ajusta para que la imagen de fondo se redimensione */
+    background-size: cover; /* Ajusta la imagen para que cubra toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: repeat-y;
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+}
+.Body .Header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5%;
+    /*flex-flow: row wrap;*/
+    height: auto;
+}
+.Logo {
+    display: flex;
+    align-items: center;
+    margin-top: 5%; /* Alinea verticalmente la imagen y el nombre */
+}
+
+.FotoPerfil {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    
+}
+span {
+    font-size: 24px;
+    color: #000000;
+    margin: 0; 
+}
+.nav{
+    display: flex;
+}
+.listaNav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.linkNav {
+    display: flex;
+    list-style-type: none;
+    justify-content:flex-end;
+    margin: 0 50px;
+}
+.listaNav li a {
+    color: #000000; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px;
+}
+.link:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.Main{
+    flex: 1;
+    color: rgb(0, 0, 0)
+    
+}
+
+.Main .Presentacion{
+    /*background-color: lightgray; */
+    margin-top: 10px;
+    padding: 25px;
+    text-align: center;
+    font-size: 32px;
+    font-display:inherit;
+}
+
+.Footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    text-align: center;
+    bottom: 0;
+    position: relative; /* Cambia a fixed si prefieres que el footer esté siempre visible en la parte inferior */
+    width: auto;
+    margin-top: auto;
+}
+.TodosLosDerechos{
+    margin: 0.2%;
+    text-align: center;
+    font-size: 100%;
+}
+
+
+
+
+/*Estilos del Main para la pestaña "Sobre Mí"*/
+
+.MainSM{
+    flex: 1;
+    color: rgb(0, 0, 0)
+    
+}
+
+.MainSM .PresentacionSM{
+    /*background-color: lightgray; */
+    padding: 25px;
+    text-align: center;
+    font-size: 22px;
+    font-display:inherit;
+}
+
+.titulo2SM{
+    font-size: 38px;
+    font-display: inherit;
+}
+
+.parrafoSM {
+    font-size: 25px;
+    font-display: inherit;
+    margin: 25px 30px 25px 30px;
+    justify-content: center;
+}
+
+/*
+h1, h2, h3, p {
+    font-size: 20px;
+    font-display: inherit;
+}
+*/
+
+
+/*Estilos del Main para la pestaña "Curriculum"*/
+.MainC{
+    flex: 1;
+    color: rgb(0, 0, 0)
+    
+}
+.descripcion {
+    text-align: center;
+    font-size: 34px;
+    font-display: inherit;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.seccionC{
+    /*background-color: lightgray; */
+    padding: 0;
+    margin: 0px 20px 0px 20px;
+    text-align: left;
+    font-size: 20px;
+    font-display:inherit;
+    
+}
+
+.titulo2C{
+    font-size: 34px;
+    font-display: inherit;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.ulSM {
+    font-size: 20px;
+    font-display: inherit;
+    justify-content: left;
+}
+
+/*Estilos del Main para la pestaña "Servicios"*/
+
+.servicios{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 34px;
+    font-display: inherit;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 0;
+    margin: 0px 20px 0px 20px;
+    text-align: left;
+    font-size: 20px;
+    font-display:inherit;
+}
+
+/*Estilos del Main para la pestaña "Contacto"*/
+.IconosC {
+    display: flex;           /* Alinea los elementos en una fila */
+    flex-direction: column;   /* Alinea los elementos en columna */
+    gap: 20px;                /* Espacio entre los elementos */
+    margin: 20px;
+    padding: 20px;
+    width: 50px;
+}
+
+.icono {
+    width: 50px;  /* Ajusta el tamaño del icono */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    vertical-align: middle; /* Alinea el icono verticalmente con el texto */
+}
+
+.link-contenido {
+    display: inline-flex;  /* Hace que el enlace se ajuste solo al tamaño del contenido */
+    align-items: center;   /* Alinea la imagen y el texto verticalmente al centro */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    margin-bottom: 10px;   /* Añade un espacio entre cada enlace */
+}
+
+.link-contenido img {
+    margin-right: 10px;  /* Espacio entre el icono y el texto */
+}
+
+.link-contenido:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón sobre el enlace */
+}
+
+/* Estilos generales del contenedor del formulario */
+.tipoContacto {
+    background-color: #b3b3b3; /* Color de fondo */
+    padding: 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    width: 400px;
+    margin: 20px auto; /* Centramos el formulario */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Alineación central */
+}
+
+/* Estilos para los campos de entrada (input y textarea) */
+.form-floating {
+    margin-bottom: 15px;
+}
+.form-control, 
+textarea.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+textarea.form-control {
+    height: 150px; /* Ajusta la altura del textarea */
+    resize: none; /* Evita el redimensionado del textarea */
+}
+
+.form-floating input, 
+.form-floating textarea {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+textarea.form-floating {
+    height: 500px; /* Ajusta la altura del textarea */
+    width: 100%; 
+    resize: none; /* Evita el cambio de tamaño del textarea */
+}
+
+/* Estilos para los botones de enviar y limpiar */
+.form {
+    width: 100%; /* Ajustar el contenedor del formulario */
+    display: flex;
+    justify-content: space-between; /* Espacio entre los botones */
+}
+
+.form .btn {
+    width: 48%; /* Tamaño de los botones */
+    border-radius: 5px;
+    background-color: #0077ff;
+    color: white;
+}
+
+.form .btn:hover {
+    background-color: #1b3755; /* Cambio de color en hover */
+}
+
+/* Títulos y textos del formulario */
+.tipoContacto h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tipoContacto p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERYS PARA MOBILE DE TAMAÑO PREVISTO DE 400PX DE ANCHO*/
+
+/* Estilos para dispositivos móviles con un ancho máximo de 400px */
+@media (max-width: 400px) {
+
+    /* Ajusta la estructura del body para móviles */
+    .Body {
+        padding: 10px;
+    }
+
+    /* Header */
+    .Body .Header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .Logo {
+        margin-top: 0;
+    }
+
+    .FotoPerfil {
+        width: 40px; /* Reduce el tamaño del perfil */
+        height: 40px;
+    }
+
+    span {
+        font-size: 18px; /* Reduce el tamaño de la fuente para el nombre */
+        margin-top: 10px;
+    }
+
+    /* Navegación */
+    .listaNav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .linkNav {
+        margin: 0 10px; /* Reduce el margen de los enlaces de navegación */
+    }
+
+    /* Ajusta los tamaños de texto en todo el sitio */
+    .Main .Presentacion, 
+    .MainSM .PresentacionSM, 
+    .descripcion, 
+    .titulo2C, 
+    .ulSM {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+    }
+
+    /* Ajustes en la sección de contacto */
+    .tipoContacto {
+        width: 100%; /* El formulario ocupará todo el ancho disponible en móviles */
+        padding: 20px;
+    }
+
+    .form-control, 
+    textarea.form-control {
+        font-size: 14px; /* Reduce el tamaño del texto en los inputs */
+        padding: 10px;
+    }
+
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form .btn {
+        width: 90%; /* Botones más grandes en móviles */
+        margin-bottom: 10px;
+    }
+
+    /* Footer */
+    .Footer {
+        padding: 10px 0;
+        font-size: 12px; /* Reduce el tamaño del texto del footer */
+    }
+
+    /* Ajusta los iconos y enlaces en la sección de contacto */
+    .IconosC {
+        flex-direction: row; /* Alinea los iconos en fila para móviles */
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .link-contenido {
+        font-size: 14px; /* Reduce el tamaño del texto en los enlaces */
+    }
+
+    .icono {
+        width: 24px; /* Ajusta el tamaño del icono */
+        margin-right: 5px; /* Reduce el espacio entre el icono y el texto */
+    }
+}
+
+
+
+
+/*MENU HAMBURGUESA*/
+/* Ocultar el checkbox */
+.menu-checkbox {
+    display: none;
+}
+
+/* Estilo del botón de menú hamburguesa */
+.menu-button {
+    display: none; /* Oculto en pantallas grandes */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Mostrar el botón en pantallas pequeñas */
+    .menu-button {
+        display: block;
+    }
+
+    /* Ocultar el menú por defecto */
+    .nav {
+        display: none;
+    }
+
+    /* Mostrar el menú cuando el checkbox está marcado */
+    .menu-checkbox:checked + .menu-button + .nav {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: white;
+    }
+
+    .listaNav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin-right: 30px;
+        background-color: #fff; /* Fondo del menú desplegable */
+    }
+
+    .linkNav {
+        margin: 10px 0;
+    }
+
+    .link {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+}

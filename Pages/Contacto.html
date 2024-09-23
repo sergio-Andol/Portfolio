@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title alt="Página Principal">Portfolio Profesional</title>
+<<<<<<< HEAD
     <!-- Icono que aparece en la pestaña del navegador al lado del título de la página -->
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
     <style>
@@ -176,12 +177,98 @@
                 <div class="form">
                     <button type="submit" class="btn btn-primary mt-3 pt-2 hoverUnirse" data-bs-toggle="modal" data-bs-target="#enviado" >Enviar</button>
                     <button type="reset" class="btn btn-primary mt-3 pt-2 hoverUnirse" data-bs-toggle="modal" data-bs-target="#limpiar">Limpiar</button>
+=======
+    
+    <!-- Icono que aparece en la pestaña del navegador al lado del título de la página -->
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <!-- Incluye Bootstrap desde un archivo local. Si por alguna razón no se carga la versión del CDN, 
+    esta hoja de estilos asegurará que aún tengas Bootstrap en tu página -->
+    <link href="../css/bootstrap.css" rel="stylesheet"> 
+    <!-- Incluye tu hoja de estilos personalizada que contiene las reglas CSS específicas para esta página -->
+    <link href="../css/estilos.css" rel="stylesheet">
+    <!-- Cargo animaciones para tener en el footer-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <!-- Carga el kit de iconos FontAwesome desde un CDN, permitiéndote usar una gran variedad de iconos en tu proyecto.
+    "crossorigin" asegura que el archivo se pueda cargar desde diferentes dominios -->
+    <script src="https://kit.fontawesome.com/9ef6259fa0.js" crossorigin="anonymous"></script>
+</head>
+<body class = "Body">
+    <header class="Header">
+        <div>
+            <a class = "Logo" href="../index.html"></a>
+            <img class="FotoPerfil" src="../Foto perfil.jpg" alt="Logo con mi cara" height="60">
+        </div>
+        <span>Sergio Nicolás Andolcetti</span>
+        <!-- Checkbox oculto -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        
+        <!-- Botón de menú hamburguesa -->
+        <label for="menu-toggle" class="menu-button">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5.0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </label>
+
+
+        <nav class="nav">
+            <ul class="listaNav" >
+                <li class="linkNav">
+                    <a class="link" href="../index.html">INICIO</a></li>
+                <li class="linkNav">
+                    <a class="link" href="./Sobre Mí.html">SOBRE MÍ</a></li>
+                <li class="linkNav">
+                    <a class="link" href="./Currículum.html">CURRÍCULUM</a></li>
+                <li class="linkNav">
+                    <a class="link" href="./Servicios.html">SERVICIOS</a></li>
+                <li class="linkNav">
+                    <a class="link" href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <main>
+        <div class="IconosC">
+            <a href="mailto:seandolcetti@uade.edu.ar" class="link-contenido">
+                <img src="../Mail.png" alt="Email Icon" class="icono"> seandolcetti@uade.edu.ar
+            </a>
+            <a href="https://www.linkedin.com/in/sergio-andolcetti/" target="_blank" class="link-contenido">
+                <img src="../linkedin.png" alt="LinkedIn Icon" class="icono"> LinkedIn
+            </a>
+            <a href="https://github.com/sergio-Andol" target="_blank" class="link-contenido">
+                <img src="../github.png" alt="GitHub Icon" class="icono"> GitHub
+            </a>
+        </div>
+
+        <section class="tipoContacto">
+            <h1>Contáctate conmigo:</h1>
+            <p>Si te interesa contactarme, enviame un mensaje</p>
+            <form class="displayConectar">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre" required>
+                    <label for="floatingInput"></label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="direccion@email.com" required>
+                    <label for="floatingInput"></label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Comentario*"></textarea>
+                </div>
+                <div class="form">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="reset" class="btn btn-primary">Limpiar</button>
+>>>>>>> 18876a6 (UVA 2)
                 </div>
             </form>
         </section>
 </main>
+<<<<<<< HEAD
     <footer>
         <p>&copy; 2024 Sergio Andolcetti. Todos los derechos reservados.</p>
     </footer>
+=======
+<footer class="Footer">
+    <p class="TodosLosDerechos">&copy; 2024 Sergio Andolcetti. Todos los derechos reservados.</p>
+</footer>
+>>>>>>> 18876a6 (UVA 2)
 </body>
 </html>

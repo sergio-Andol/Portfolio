@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title alt="Página Principal">Portfolio Profesional</title>
+<<<<<<< HEAD
     <!-- Icono que aparece en la pestaña del navegador al lado del título de la página -->
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
     <style>
@@ -130,12 +131,80 @@
             <p>Aplico mi experiencia en ingeniería y tecnología para optimizar procesos operativos dentro de las empresas. Esto incluye la implementación de soluciones tecnológicas que mejoran la productividad y reducen los costos operativos. Mis servicios abarcan desde la consultoría hasta la implementación de sistemas de gestión y automatización de procesos.</p>
 
             <h3>Consultoría en Diseño UX/UI</h3>
+=======
+    
+    <!-- Icono que aparece en la pestaña del navegador al lado del título de la página -->
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <!-- Incluye Bootstrap desde un archivo local. Si por alguna razón no se carga la versión del CDN, 
+    esta hoja de estilos asegurará que aún tengas Bootstrap en tu página -->
+    <link href="../css/bootstrap.css" rel="stylesheet"> 
+    <!-- Incluye tu hoja de estilos personalizada que contiene las reglas CSS específicas para esta página -->
+    <link href="../css/estilos.css" rel="stylesheet">
+    <!-- Cargo animaciones para tener en el footer-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <!-- Carga el kit de iconos FontAwesome desde un CDN, permitiéndote usar una gran variedad de iconos en tu proyecto.
+    "crossorigin" asegura que el archivo se pueda cargar desde diferentes dominios -->
+    <script src="https://kit.fontawesome.com/9ef6259fa0.js" crossorigin="anonymous"></script>
+</head>
+<body class = "Body">
+    <header class="Header">
+        <div>
+            <a class = "Logo" href="../index.html"></a>
+            <img class="FotoPerfil" src="../Foto perfil.jpg" alt="Logo con mi cara" height="60">
+        </div>
+        <span>Sergio Nicolás Andolcetti</span>
+        <!-- Checkbox oculto -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        
+        <!-- Botón de menú hamburguesa -->
+        <label for="menu-toggle" class="menu-button">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5.0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </label>
+
+        <nav class="nav">
+            <ul class="listaNav" >
+                <li class="linkNav">
+                    <a class="link" href="../index.html">INICIO</a></li>
+                <li class="linkNav">
+                    <a class="link" href="./Sobre Mí.html">SOBRE MÍ</a></li>
+                <li class="linkNav">
+                    <a class="link" href="./Currículum.html">CURRÍCULUM</a></li>
+                <li class="linkNav">
+                    <a class="link" href="#">SERVICIOS</a></li>
+                <li class="linkNav">
+                    <a class="link" href="./Contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+    <main class="Main">
+        <section class="servicios">
+            <h2 class="descripcion">Servicios</h2>
+
+            <h2 class="titulo2C">Desarrollo Web Front-End</h2>
+            <p>Ofrezco servicios de desarrollo web front-end, creando interfaces atractivas, interactivas y funcionales utilizando tecnologías como HTML, CSS, JavaScript, y frameworks como React. Me especializo en la creación de sitios web responsivos que se adaptan a cualquier dispositivo, mejorando la experiencia del usuario y la accesibilidad del contenido.</p>
+
+            <h2 class="titulo2C">Análisis de Datos y Automatización</h2>
+            <p>Proveo servicios de análisis de datos y automatización, utilizando herramientas como SQL y Power BI para transformar datos crudos en información valiosa. Mi experiencia en la creación de dashboards interactivos permite a las empresas tomar decisiones informadas basadas en datos concretos.</p>
+
+            <h2 class="titulo2C">Optimización de Procesos con Tecnología</h2>
+            <p>Aplico mi experiencia en ingeniería y tecnología para optimizar procesos operativos dentro de las empresas. Esto incluye la implementación de soluciones tecnológicas que mejoran la productividad y reducen los costos operativos. Mis servicios abarcan desde la consultoría hasta la implementación de sistemas de gestión y automatización de procesos.</p>
+
+            <h2 class="titulo2C">Consultoría en Diseño UX/UI</h2>
+>>>>>>> 18876a6 (UVA 2)
             <p>Ofrezco servicios de consultoría en diseño UX/UI, ayudando a crear interfaces de usuario intuitivas y atractivas que mejoran la experiencia del usuario final. Utilizo principios de diseño centrado en el usuario para asegurar que cada interacción sea simple y satisfactoria.</p>
         </section>
     </main>
 
+<<<<<<< HEAD
     <footer>
         <p>&copy; 2024 Sergio Andolcetti. Todos los derechos reservados.</p>
+=======
+    <footer class="Footer">
+        <p class="TodosLosDerechos">&copy; 2024 Sergio Andolcetti. Todos los derechos reservados.</p>
+>>>>>>> 18876a6 (UVA 2)
     </footer>
 </body>
 </html>
